@@ -1,0 +1,537 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root
+{
+    --fondo-a:#090f6a;
+    --fondo-b:#00b2f8be;
+    --fondo-c: #e1fa01;
+    --fuente-d:#1ad7a5ce;
+    --fuente-e:#00abfae7;
+    --fuente-f:#b700ff;
+    
+}
+body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.774),
+        rgba(59, 31, 25, 0.521)),
+        url(../imaguenes/PORTADAA.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 70vh;
+        translate: 0.5s;
+    
+}
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header
+{
+ background-image: linear-gradient(
+ rgba(0, 0, 0, 0.671),
+ rgba(60, 10, 10, 0.511)),
+ url(../imaguenes/PORTADA.jpg);
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ min-height: 70vh;
+
+
+}
+.menu
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: -12px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*LOGO*/
+
+.logo
+{
+     color: var(--fuente-e);
+     font-size: 25px;
+     
+}
+.logo img
+{
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #6d03488e;
+    border-radius:125px 120px;
+
+}
+/*MENU*/
+
+
+.menu .navbar ul li
+{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a
+{
+    font-size: 15px;
+    padding: 28px;
+    color: #ffffff;
+    display: block;
+    background-color: rgba(7, 9, 122, 0.322);
+    border-radius: 131PX 10PX;
+}
+.menu .navbar ul li a:hover
+{
+    color: var(--fuente-d);
+
+}
+#menu
+{
+    display: none;
+}
+.menu-icono
+{
+    width: 25px;
+    
+}
+.menu label
+{
+    cursor: pointer;
+    display: none;
+}
+
+/*HEADER*/
+
+
+.header-content 
+{
+    display: flex;
+}
+.header-txt
+{
+    width: 50%;
+    padding: 135px;
+    
+}
+.header-txt h1
+{
+    font-size: 105px;
+    line-height: 110px;
+    color: var(--fuente-f);
+    
+}
+.header-txt h1:hover
+{
+    color: var(--fondo-b);
+}
+
+.header-txt1 img
+{
+    width: 180px;
+    height: 350px;
+    justify-content: center;
+    margin: 115px;
+    border-radius: 140px 250px;
+    overflow: hidden;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.header-txt1 img:hover
+{
+    transform: scale(1.2);
+}
+
+.header-txt p
+{
+    font-size: 16px;
+    color: var(--fuente-e);
+    margin-bottom: 15px;
+}
+/*BTN-1*/
+
+.btn-1
+{
+    display: inline-block;
+    padding: 11px 45px;
+    background-color: var(--fondo-c);
+    color: var(--fuente-e);
+    border-radius: 25px;
+    font-size: 22px;
+}
+.btn-1:hover
+{
+    background-color: var(--fondo-a);
+}
+
+/*DIRECTION*/
+
+
+.direction
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+    margin: 110px;
+    align-items: center;
+    background: var(--fuente-e);
+    border-radius: 50px;
+
+    
+    
+}
+
+.direction p
+{
+    color: var(--fondo-c);
+    font-size: 26px;
+    text-decoration: none;
+   
+}
+.direction a
+{
+    color: #8d1e12;
+}
+
+/*ABOUT*/
+
+.about
+{
+    padding: 150px 0;
+    display: flex;
+}
+.about-txt
+{
+    width: 50%;
+}
+.about-img
+{
+    width: 50%;
+}
+.about-img img
+{
+    width: 450px;
+    height: 550px;
+    border-radius: 320px 51px;
+    overflow: hidden;
+    transition: 0.5s;
+    object-fit: cover;
+    
+}
+.about-img img:hover
+{
+    transform: scale(1.2);
+}
+h2
+{
+    font-size: 70px;
+    color: var(--fuente-e);
+    margin-bottom: 15px;
+}
+.about-txt p
+{
+ font-size: 16px;
+ color: var(--fuente-e);
+ margin-bottom: 35px;
+}
+
+/*CAJAS*/
+.conte-cards
+{
+	display: flex;
+	margin: 5px;
+}
+ 
+
+.card
+{
+	width: 960px;
+	height: 250px;
+	margin: 15px;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #0e223683;
+    box-shadow: 0px 1px 10px rgba(33, 31, 31, 0.342);
+    transition: all 400ms ease;
+   
+}
+.card:hover
+{
+    box-shadow: 5px 5px 20px rgb(129, 8, 8);
+    transform: translateY(-3%);
+}
+.conte-cards img
+{
+    width: 180px;
+    height: 150PX;
+    position: center;
+    padding: 10px;
+    margin: 0px;
+    display: block;
+}
+/*CONTENIDO*/
+
+.contenido a
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #5d0808;
+    border: 1px solid #682e2e;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.contenido a:hover
+{
+	background: #6b0909;
+	color: white;
+}
+/*INFORMACION*/
+
+.informacion
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.informacion-1
+{
+    display: flex;
+    align-items: center;
+}
+
+/*CASA*/
+.casa
+{
+    display: flex;
+    padding: 50px ;
+    justify-content: space-between;
+}
+.casa h3
+{
+    font-size: 50px;
+    color:var(--fondo-c);
+    align-items: center;
+    text-align: center;
+}
+.casa p
+{
+    font-size: 20px;
+    color:#01fa8a;
+    align-items: center;
+    text-align: center;
+}
+.casa a
+{
+    text-decoration: none;
+}
+.casa-1
+{
+    background-image: linear-gradient(
+   rgba(0, 0, 0, 0.329),
+   rgba(253, 171, 7, 0.308)),
+    url(../imaguenes/MUJER.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     height: 500px;
+     width: 100%;
+     padding: 25px;
+     overflow: hidden;
+     transition: 0.5s;
+     object-fit: cover;
+}
+
+
+.casa-1:hover
+{
+    transform: scale(1.2);
+}
+.casa-2
+{
+    background-image: linear-gradient(
+   rgba(93, 93, 93, 0.329),
+   rgba(0, 0, 0, 0.712)),
+    url(../imaguenes/BATMAN.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     height: 500px;
+     width: 100%;
+     padding: 25px;
+     overflow: hidden;
+     transition: 0.5s;
+     object-fit: cover;
+}
+.casa-2:hover
+{
+    transform: scale(1.2);
+}
+.casa-3
+{
+    background-image: linear-gradient(
+   rgba(0, 0, 0, 0.329),
+   rgba(3, 15, 87, 0.335)),
+    url(../imaguenes/SUPERMAN.jpg );
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     height: 500px;
+     width: 100%;
+     padding: 25px;
+     overflow: hidden;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.casa-3:hover
+{
+    transform: scale(1.2);
+}
+.casa-4
+{
+    background-image: linear-gradient(
+   rgba(0, 0, 0, 0.329),
+   rgba(253, 7, 7, 0.308)),
+    url(../imaguenes/FLASH.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     height: 500px;
+     width: 100%;
+     padding: 25px;
+     overflow: hidden;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.casa-4:hover
+{
+    transform: scale(1.2);
+}
+.blog{
+    padding: 15 55px;
+    text-align: center;
+}
+.blog-content
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+.blog-1
+{
+    padding: 15px 55px;
+}
+.blog-1 img
+{
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+
+}
+.blog-1  h3{
+    font-size: 25px;
+    color: #1fea18;
+}
+/*FINNAL*/
+footer
+{
+    background: #690707b6;
+    padding: 30px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer
+{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 60px;
+    border-bottom: 1px rgba(155, 52, 52, 0.61);
+}
+
+.content-foo
+{
+    text-align: center;
+    
+}
+
+.content-foo h4
+{
+    color: rgb(255, 253, 253);
+    border-bottom: 3px solid #062d97;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+}
+.content-foo p
+{
+    color: rgb(204, 190, 190);
+   
+}
+.pie
+{
+    width: 1860px;
+    height: 300px;
+    margin-inline: 150px;
+
+}
+
+.menu1
+{
+    width:100%;
+    height: 0px;
+    float: right;
+    margin: 10px;
+    margin-right: -10px;
+
+}
+.menu1 li
+{
+    width: 190px;
+    height: 50px;
+    float: right;
+    margin-inline: 30px;
+    line-height: 0px;
+     margin: -15PX auto;
+     display: flex;
+}
+.menu1 li img
+{
+    width: 50px;
+    height: 50px;
+    margin-inline: -630px;
+    margin-bottom: 0px;
+    
+   
+
+}
+
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
